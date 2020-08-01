@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+ background-image:url(skystars.jpg);
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 10px -10px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: pink;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.main-nav
+ {
+
+	float: left;
+	list-style:none;
+	margin-top:0px;
+}
+
+.main-nav li 
+{
+	display: inline-block;
+}
+
+.main-nav li a
+{
+	background-color: darkorange;
+	opacity: 0.9;
+	color: black;
+	text-decoration: ultra-condensed;
+	padding: 7px 20px;
+	font-family:"verdana", sans-serif;
+	font-size:17px;
+}
+
+.main-nav li.active a 
+{
+	border: 2px solid blue;
+}
+
+.main-nav li a:hover
+{
+	border: 2px solid blue;
+}
+</style>
+<div class="row">
+		<ul class="main-nav">
+			<li class="active"><a href="home.html"> HOME </a></li>
+			<li><a href="gal.html"> OUR GALLERY </a></li>
+			<li><a href="regis.html"> USER REGISTERATION </a></li>
+			<li><a href="login.html"> LOGIN/SIGN-UP </a></li>
+			<li><a href="serv.html"> SERVICES </a></li>
+			<li><a href="our.html"> ABOUT US </a></li>
+			<li><a href="cont.html"> CONTACT </a></li>
+		</ul>
+	</div>
+
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>Explore Varient Indian Culture</h1>
+<hr>
+
+<h2>IMAGES & VIDEOS</h2>
+
+<div id="myBtnContainer">
+	<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+		<button class="btn" onclick="filterSelection('images')"> IMAGES</button>
+		<button class="btn" onclick="filterSelection('videos')"> VIDEOS</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column images">
+    <div class="content">
+      <img src="1 Taj-Mahal.jpg" alt="Taj Mahal" style="width:100%">
+      <h4>Taj Mahal</h4>
+	  <div style="position:absolute;top:50%;right:55%;"><a href="1img.html">READ MORE....</a></div>
+	 
+    </div>
+	</div>
+  <div class="column images">
+    <div class="content">
+		<img src="2 Khajuraho.jpg" alt="Khajuraho" style="width:100%;">
+		<h4>Khajuraho</h4>
+    </div>
+	</div>
+ 
+  <div class="column images">
+    <div class="content">
+    <img src="3 Hampi.jpg" alt="Hampi" style="width:100%;">
+      <h4>Hampi</h4>
+    </div>
+  </div>
+ 
+  <div class="column images">
+    <div class="content">
+      <img src="4 Ajanta.jpg" alt="Ajanta" style="width:100%;">
+      <h4>Ajanta</h4>
+    </div>
+  </div>
+  <div class="column images">
+    <div class="content">
+    <img src="5 Ellora.jpg" alt="Ellora" style="width:100%;">
+      <h4>Ellora</h4>
+      
+    </div>
+  </div>
+  <div class="column images">
+    <div class="content">
+    <img src="6 Bodh gaya.jpg" alt="Bodh gaya" style="width:100%;">
+      <h4>Bodh gaya</h4>
+      
+    </div>
+  </div>
+
+  <div class="column images">
+    <div class="content">
+      <img src="7 Sun temple.jpg" alt="Sun temple" style="width:100%">
+      <h4>Sun temple</h4>
+      
+    </div>
+  </div>
+  <div class="column images">
+    <div class="content">
+    <img src="8 Red-Fort.jpg" alt="Red-Fort" style="width:100%">
+      <h4>Red-Fort</h4>
+     
+    </div>
+  </div>
+ 
+  <div class="column images">
+    <div class="content">
+    <img src="9 Sanchi.jpg" alt="Sanchi" style="width:100%">
+      <h4>Sanchi</h4>
+      
+    </div>
+  </div>
+  
+   <div class="column images">
+    <div class="content">
+    <img src="10 Cholas.jpg" alt="Cholas" style="width:100%">
+      <h4>Cholas</h4>
+      
+    </div>
+	</div>
+	
+	<div class="column images">
+    <div class="content">
+    <img src="11 Kaziranga.jpg" style="width:100%;height:30%;">
+      <h4>Kaziranga Wild Life Sanctuary, Assam</h4>
+      
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="12 Group of monuments.jpg" style="width:100%;height:30%;">
+      <h4>Group of Monuments at Mahabalipuram, Tamil Nadu</h4>
+     
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="13 Sunderbans.jpg" style="width:100%;height:30%;">
+      <h4>Sundarbans National Park, West Bengal</h4>
+      
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="14 Humayuns-Tomb.jpg" style="width:100%;height:30%;">
+      <h4>Humayun’s Tomb, New Delhi</h4>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="15 Jantar-Mantar.jpg" style="width:100%;height:30%;">
+      <h4>Jantar Mantar, Jaipur, Rajasthan</h4>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="16 Agra-Fort.jpg" style="width:100%">
+      <h4>Agra Fort, Uttar Pradesh</h4>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="17 Fatehpur-Sikri.jpg" alt="Fatehpur Sikri, Uttar Pradesh" style="width:100%">
+      <h4>Fatehpur Sikri, Uttar Pradesh</h4>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="18 Rani-Ki-Vav.jpg" alt="Rani Ki Vav, Patan, Gujarat" style="width:100%">
+      <h4>Rani Ki Vav, Patan, Gujarat</h4>
+    
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="19 Group of Manument atPattadakal.jpg" alt="Group of Monuments at Pattadakal, Karnataka" style="width:100%">
+      <h4>Group of Monuments at Pattadakal, Karnataka</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="20 Elephanta.jpg" alt="Elephanta Caves, Maharashtra" style="width:100%">
+      <h4>Elephanta Caves, Maharashtra</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="21 Nalanda_University_India_ruins.jpg" alt="Nalanda Mahavihara (Nalanda University), Bihar" style="width:100%">
+      <h4>Nalanda Mahavihara (Nalanda University), Bihar</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="22 Chatrapati Shivaji.jpg" alt="Chhatrapati Shivaji Terminus (formerly Victoria Terminus), Maharashtra" style="width:100%">
+      <h4>Chhatrapati Shivaji Terminus (formerly Victoria Terminus), Maharashtra</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="23 Mountain.jpg" alt="Mountain Railways of India" style="width:100%">
+      <h4>Mountain Railways of India</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="24 Qutb-Minar.jpg" alt="Qutb Minar and its Monuments, New Delhi" style="width:100%">
+      <h4>Qutb Minar and its Monuments, New Delhi</h4>
+      <p></p>
+    </div></div>
+	<div class="column images">
+    <div class="content">
+    <img src="25 Champaner.jpg" alt="Champaner-Pavagadh Archaeological Park, Gujarat" style="width:100%">
+      <h4>Champaner-Pavagadh Archaeological Park, Gujarat</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="26 Great-Himalayan-National-Park.jpg" alt="Great Himalayan National Park, Himachal Pradesh" style="width:100%">
+      <h4>Great Himalayan National Park, Himachal Pradesh</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="27 Hill Fort Of Rajasthanjpg.jpg" alt="Hill Forts of Rajasthan" style="width:100%">
+      <h4>Hill Forts of Rajasthan</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="28 Church-of-St.-Francis-of-Assisi-Goa.jpg" alt="Churches and Convents of Goa" style="width:100%">
+      <h4>Churches and Convents of Goa</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="29 Rock-Shelters-of-Bhimbetka-Madhya-Pradesh.jpg" alt="Rock Shelters of Bhimbetka, Madhya Pradesh" style="width:100%">
+      <h4>Rock Shelters of Bhimbetka, Madhya Pradesh</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="30 Manas-Wildlife-Sanctuary.jpg" alt="Manas Wild Life Sanctuary, Assam" style="width:100%">
+      <h4>Manas Wild Life Sanctuary, Assam</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="31 Keoladeo-Bharatpur1.jpg" alt="Keoladeo National Park, Bharatpur, Rajasthan" style="width:100%">
+      <h4>Keoladeo National Park, Bharatpur, Rajasthan</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="32 Nanda.jpg" alt="Nanda Devi and Valley of Flowers National Parks, Uttarakhand" style="width:100%">
+      <h4>Nanda Devi and Valley of Flowers National Parks, Uttarakhand</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="33 Western-Ghats.jpg" alt="Western Ghats" style="width:100%">
+      <h4>Western Ghats</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="34 Khangchendzo.jpg" alt="Khangchendzonga National Park, Sikkim" style="width:100%">
+      <h4>Khangchendzonga National Park, Sikkim</h4>
+      <p></p>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="35 capitol-complex.jpg" alt="Capitol Complex, Chandigarh" style="width:100%">
+      <h4>Capitol Complex, Chandigarh</h4>
+    </div>
+	</div>
+	<div class="column images">
+    <div class="content">
+    <img src="36 The historic Ahmedabad.jpg" alt=" The historic city of Ahmedabad" style="width:100%">
+      <h4> The historic city of Ahmedabad</h4>
+    </div>
+	</div>
+	
+	
+  </div>
+   <div class="column videos">
+    <div class="content">
+   <video width="250" height="200" controls>
+  <source src="chateesgarh.mp4" type="video/mp4">
+</video>
+      <h4>The cultural heritage which demonstrate the legacy of India</h4>
+    </div>
+  </div>
+  
+   <div class="column videos">
+    <div class="content">
+   <video width="250" height="200" controls>
+  <source src="darjeeling.mp4" type="video/mp4">
+  </video>
+      <h4>Darjeeling visit</h4>
+    </div>
+  </div>
+  
+   <div class="column videos">
+    <div class="content">
+   <video width="250" height="200" controls>
+  <source src="gujratvideo.mp4" type="video/mp4">
+  </video>
+      <h4>Gujarat Tourism</h4>
+    </div>
+  </div>
+   <div class="column videos">
+    <div class="content">
+   <video width="250" height="200" controls>
+  <source src="indiaheritagevideo.mp4" type="video/mp4">
+</video>
+      <h4>Indian World Heritage Sites</h4>
+    </div>
+  </div>
+   <div class="column videos">
+    <div class="content">
+   <video width="250" height="200" controls>
+  <source src="j&Ktourism.mp4" type="video/mp4">
+</video>
+      <h4>10  Best places to visit in Jammu and Kashmir</h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

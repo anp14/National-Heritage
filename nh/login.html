@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript">
+function fun()
+{
+alert("successful");
+}
+</script>
+<title>login/signup</title>
+	<link rel="stylesheet"href="login.css">
+</head>
+<body>
+<div class="row">
+		<ul class="main-nav">
+			<li class="active"><a href="home.html"> HOME </a></li>
+			<li><a href="gal.html"> OUR GALLERY </a></li>
+			<li><a href="regis.html"> USER REGISTERATION </a></li>
+			<li><a href="login.html"> LOGIN/SIGN-UP </a></li>
+			<li><a href="serv.html"> SERVICES </a></li>
+			<li><a href="our.html"> ABOUT US </a></li>
+			<li><a href="cont.html"> CONTACT </a></li>
+		</ul>
+</div>
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button onclick="fun();">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+<script>
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+</script>
+</body>
+</html>
