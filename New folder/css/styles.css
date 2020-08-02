@@ -165,7 +165,7 @@ body {
 /********** Medium devices only **********/
 /*@media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
- /* #logo-img {
+  #logo-img {
     background: url('../images/OIP100.jpg') no-repeat;
     width: 100px;
     height: 100px;
