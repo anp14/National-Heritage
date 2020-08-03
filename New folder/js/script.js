@@ -13,7 +13,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var dc = {};
 
-var homeHtmlUrl = "snippets/home-snippet.html";
+/*var homeHtmlUrl = "snippets/home-snippet.html";
 var allCategoriesUrl =
   "https://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
@@ -22,7 +22,7 @@ var menuItemsUrl =
   "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
-
+*/
 // Convenience function for inserting innerHTML for 'select'
 var insertHtml = function (selector, html) {
   var targetElem = document.querySelector(selector);
@@ -46,7 +46,7 @@ var insertProperty = function (string, propName, propValue) {
 };
 
 // Remove the class 'active' from home and switch to Menu button
-var switchMenuToActive = function () {
+/*var switchMenuToActive = function () {
   // Remove 'active' from home button
   var classes = document.querySelector("#navHomeButton").className;
   classes = classes.replace(new RegExp("active", "g"), "");
@@ -58,7 +58,7 @@ var switchMenuToActive = function () {
     classes += " active";
     document.querySelector("#navMenuButton").className = classes;
   }
-};
+};*/
 
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
@@ -120,7 +120,7 @@ function chooseRandomCategory (categories) {
 
 
 // Load the menu categories view
-dc.loadMenuCategories = function () {
+/*dc.loadMenuCategories = function () {
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     allCategoriesUrl,
@@ -286,7 +286,7 @@ function buildMenuItemsViewHtml(categoryMenuItems,
 
   finalHtml += "</section>";
   return finalHtml;
-}
+}*/
 
 
 // Appends price with '$' if price exists
