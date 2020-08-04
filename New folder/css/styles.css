@@ -164,9 +164,9 @@ body {
 @media (min-width: 1200px) {
   /* Header */
   #pogo-img {
-    background: url('../images/OIP(100).jpg') no-repeat;
-    width: 100px;
-    height: 100px;
+    background: url('../images/in1200.jpg') no-repeat;
+    width: 1200px;
+    height: 675px;
     margin: 5px 5px 5px 0;
   }
 
