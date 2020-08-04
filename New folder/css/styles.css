@@ -164,7 +164,7 @@ body {
 
 @media (min-width: 1200px) {
   /* Header */
-  #pogo-img {
+  #bogo-img {
     background: url('../images/in1200.jpg') no-repeat;
     height: 100px;
     margin: 5px 5px 5px 0;
@@ -173,7 +173,7 @@ body {
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
-  #bogo-img {
+  #logo-img {
     background: url('../images/OIP(100).jpg') no-repeat;
     width: 100px;
     height: 100px;
