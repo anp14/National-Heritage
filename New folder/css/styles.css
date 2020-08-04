@@ -197,7 +197,7 @@ body {
   /* Header */
   #pogo-img {
     background: url('../images/in768.jpg') no-repeat;
-  
+     height: 432px;
     margin: 5px 5px 5px ;
   }
 }
@@ -362,7 +362,7 @@ body {
   /* Header */
   #pogo-img {
     background: url('../images/in768.jpg') no-repeat;
-    
+    height: 432px;
     margin: 5px 5px 5px ;
   }
 }
