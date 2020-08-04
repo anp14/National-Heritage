@@ -336,6 +336,7 @@ body {
     height: 675px;
     margin: 5px 5px 5px 0;
   }
+}
 
   @media (min-width:  992px) and (max-width:  1199px) {
   /* Header */
@@ -344,6 +345,7 @@ body {
     height: 558px;
     margin: 5px 5px 5px ;
   }
+}
 
 
   @media (min-width:  768px) and (max-width:  991px) {
@@ -353,6 +355,7 @@ body {
     height: 432px;
     margin: 5px 5px 5px ;
   }
+}
   
 
   @media (max-width:  767px) {
@@ -362,5 +365,6 @@ body {
     height: 300px;
     margin: 5px 5px 5px ;
   }
+}
    
 
