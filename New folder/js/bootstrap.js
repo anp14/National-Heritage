@@ -65,13 +65,13 @@ if (typeof jQuery === 'undefined') {
 
     if (!$.support.transition) return
 
-  /*  $.event.special.bsTransitionEnd = {
+    $.event.special.bsTransitionEnd = {
       bindType: $.support.transition.end,
       delegateType: $.support.transition.end,
       handle: function (e) {
         if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
       }
-    }*/
+    }
   })
 
 }(jQuery);
@@ -103,7 +103,6 @@ if (typeof jQuery === 'undefined') {
   Alert.prototype.close = function (e) {
     var $this    = $(this)
     var selector = $this.attr('data-target')
-
 
     if (!selector) {
       selector = $this.attr('href')
@@ -779,14 +778,13 @@ if (typeof jQuery === 'undefined') {
     return $parent && $parent.length ? $parent : $this.parent()
   }
 
-  /*function clearMenus(e) {
+  function clearMenus(e) {
     if (e && e.which === 3) return
     $(backdrop).remove()
     $(toggle).each(function () {
       var $this         = $(this)
       var $parent       = getParent($this)
       var relatedTarget = { relatedTarget: this }
-
 
       if (!$parent.hasClass('open')) return
 
@@ -799,7 +797,7 @@ if (typeof jQuery === 'undefined') {
       $this.attr('aria-expanded', 'false')
       $parent.removeClass('open').trigger($.Event('hidden.bs.dropdown', relatedTarget))
     })
-  }*/
+  }
 
   Dropdown.prototype.toggle = function (e) {
     var $this = $(this)
@@ -809,7 +807,7 @@ if (typeof jQuery === 'undefined') {
     var $parent  = getParent($this)
     var isActive = $parent.hasClass('open')
 
-    /*clearMenus()
+    clearMenus()
 
     if (!isActive) {
       if ('ontouchstart' in document.documentElement && !$parent.closest('.navbar-nav').length) {
@@ -818,7 +816,7 @@ if (typeof jQuery === 'undefined') {
           .addClass('dropdown-backdrop')
           .insertAfter($(this))
           .on('click', clearMenus)
-      }*/
+      }
 
       var relatedTarget = { relatedTarget: this }
       $parent.trigger(e = $.Event('show.bs.dropdown', relatedTarget))
@@ -856,8 +854,7 @@ if (typeof jQuery === 'undefined') {
     }
 
     var desc = ' li:not(.disabled):visible a'
-   /* var $items = $parent.find('.dropdown-menu' + desc)*/
-
+    var $items = $parent.find('.dropdown-menu' + desc)
 
     if (!$items.length) return
 
@@ -902,14 +899,14 @@ if (typeof jQuery === 'undefined') {
   // APPLY TO STANDARD DROPDOWN ELEMENTS
   // ===================================
 
- /* $(document)
+  $(document)
     .on('click.bs.dropdown.data-api', clearMenus)
     .on('click.bs.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
     .on('click.bs.dropdown.data-api', toggle, Dropdown.prototype.toggle)
     .on('keydown.bs.dropdown.data-api', toggle, Dropdown.prototype.keydown)
     .on('keydown.bs.dropdown.data-api', '.dropdown-menu', Dropdown.prototype.keydown)
 
-}(jQuery);*/
+}(jQuery);
 
 /* ========================================================================
  * Bootstrap: modal.js v3.3.6
@@ -1929,7 +1926,7 @@ if (typeof jQuery === 'undefined') {
 
     this.$body
       .find(this.selector)
-     /* .map(function () {
+      .map(function () {
         var $el   = $(this)
         var href  = $el.data('target') || $el.attr('href')
         var $href = /^#./.test(href) && $(href)
@@ -1938,7 +1935,7 @@ if (typeof jQuery === 'undefined') {
           && $href.length
           && $href.is(':visible')
           && [[$href[offsetMethod]().top + offsetBase, href]]) || null
-      })*/
+      })
       .sort(function (a, b) { return a[0] - b[0] })
       .each(function () {
         that.offsets.push(this[0])
@@ -1989,11 +1986,11 @@ if (typeof jQuery === 'undefined') {
       .parents('li')
       .addClass('active')
 
-   /* if (active.parent('.dropdown-menu').length) {
+    if (active.parent('.dropdown-menu').length) {
       active = active
         .closest('li.dropdown')
         .addClass('active')
-    }*/
+    }
 
     active.trigger('activate.bs.scrollspy')
   }
@@ -2073,7 +2070,7 @@ if (typeof jQuery === 'undefined') {
 
   Tab.prototype.show = function () {
     var $this    = this.element
-    /*var $ul      = $this.closest('ul:not(.dropdown-menu)')*/
+    var $ul      = $this.closest('ul:not(.dropdown-menu)')
     var selector = $this.data('target')
 
     if (!selector) {
@@ -2120,11 +2117,11 @@ if (typeof jQuery === 'undefined') {
     function next() {
       $active
         .removeClass('active')
-        /*.find('> .dropdown-menu > .active')
+        .find('> .dropdown-menu > .active')
           .removeClass('active')
         .end()
         .find('[data-toggle="tab"]')
-          .attr('aria-expanded', false)*/
+          .attr('aria-expanded', false)
 
       element
         .addClass('active')
@@ -2138,14 +2135,14 @@ if (typeof jQuery === 'undefined') {
         element.removeClass('fade')
       }
 
-     /* if (element.parent('.dropdown-menu').length) {
+      if (element.parent('.dropdown-menu').length) {
         element
           .closest('li.dropdown')
             .addClass('active')
           .end()
           .find('[data-toggle="tab"]')
             .attr('aria-expanded', true)
-      }*/
+      }
 
       callback && callback()
     }
