@@ -62,9 +62,12 @@
 
 .bac img
 {
-	width:350px;
+	width:1200px;
 	height:auto;
 	float:center;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
 }
 
 
