@@ -164,41 +164,6 @@ body {
 
 
 
-@media (min-width: 1200px) {
-  /* Header */
-  #pogo-img {
-    background: url('../images/in1200.jpg') no-repeat;
-    height: 675px;
-    margin: 5px 5px 5px 0;
-  }
-
-  @media (min-width:  992px) and (max-width:  1199px) {
-  /* Header */
-  #pogo-img {
-    background: url('../images/in992.jpg') no-repeat;
-    height: 558px;
-    margin: 5px 5px 5px ;
-  }
-
-
-  @media @media (min-width:  768px) and (max-width:  991px) {
-  /* Header */
-  #pogo-img {
-    background: url('../images/in768.jpg') no-repeat;
-    height: 432px;
-    margin: 5px 5px 5px ;
-  }
-  
-
-  @media (max-width:  767px) {
-  /* Header */
-  #pogo-img {
-    background: url('../images/in768.jpg') no-repeat;
-    height: 300px;
-    margin: 5px 5px 5px ;
-  }
-   
-
 
 
 /********** Medium devices only *********/
@@ -324,3 +289,39 @@ body {
     width: 100%;
   }
 }
+
+@media (min-width: 1200px) {
+  /* Header */
+  #pogo-img {
+    background: url('../images/in1200.jpg') no-repeat;
+    height: 675px;
+    margin: 5px 5px 5px 0;
+  }
+
+  @media (min-width:  992px) and (max-width:  1199px) {
+  /* Header */
+  #pogo-img {
+    background: url('../images/in992.jpg') no-repeat;
+    height: 558px;
+    margin: 5px 5px 5px ;
+  }
+
+
+  @media @media (min-width:  768px) and (max-width:  991px) {
+  /* Header */
+  #pogo-img {
+    background: url('../images/in768.jpg') no-repeat;
+    height: 432px;
+    margin: 5px 5px 5px ;
+  }
+  
+
+  @media (max-width:  767px) {
+  /* Header */
+  #pogo-img {
+    background: url('../images/in768.jpg') no-repeat;
+    height: 300px;
+    margin: 5px 5px 5px ;
+  }
+   
+
