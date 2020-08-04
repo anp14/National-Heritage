@@ -164,8 +164,9 @@ body {
 
 @media (min-width: 1200px) {
   /* Header */
-  #bogo-img {
+  #gogo-img {
     background: url('../images/in1200.jpg') no-repeat;
+    width: 100px;
     height: 100px;
     margin: 5px 5px 5px 0;
   }
