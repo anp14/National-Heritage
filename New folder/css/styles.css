@@ -168,7 +168,6 @@ body {
   /* Header */
   #pogo-img {
     background: url('../images/in1200.jpg') no-repeat;
-    
     height: 675px;
     margin: 5px 5px 5px 0;
   }
@@ -177,7 +176,6 @@ body {
   /* Header */
   #pogo-img {
     background: url('../images/in992.jpg') no-repeat;
-    
     height: 558px;
     margin: 5px 5px 5px 0;
   }
@@ -186,16 +184,14 @@ body {
   /* Header */
   #pogo-img {
     background: url('../images/in768.jpg') no-repeat;
-    
     height: 432px;
     margin: 5px 5px 5px 0;
   }
-  
+
   @media (max-width: 767px) {
   /* Header */
   #pogo-img {
     background: url('../images/in768.jpg') no-repeat;
-    
     height: 300px;
     margin: 5px 5px 5px 0;
   }
