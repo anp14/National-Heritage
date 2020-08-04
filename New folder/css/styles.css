@@ -179,7 +179,21 @@ body {
     height: 558px;
     margin: 5px 5px 5px 0;
   }
+   @media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #pogo-img {
+    background: url('../images/in992.jpg') no-repeat;
+    height: 558px;
+    margin: 5px 5px 5px 0;
+  }
 
+  @media @media (min-width: 768px) and (max-width: 991px) {
+  /* Header */
+  #pogo-img {
+    background: url('../images/in768.jpg') no-repeat;
+    height: 432px;
+    margin: 5px 5px 5px 0;
+  }
   @media @media (min-width: 768px) and (max-width: 991px) {
   /* Header */
   #pogo-img {
@@ -189,6 +203,13 @@ body {
   }
 
   @media (max-width: 767px) {
+  /* Header */
+  #pogo-img {
+    background: url('../images/in768.jpg') no-repeat;
+    height: 300px;
+    margin: 5px 5px 5px 0;
+  }
+   @media (max-width: 767px) {
   /* Header */
   #pogo-img {
     background: url('../images/in768.jpg') no-repeat;
